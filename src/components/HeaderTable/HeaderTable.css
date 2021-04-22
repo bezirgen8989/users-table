@@ -1,0 +1,17 @@
+@media (max-width: 376px) {
+    .App .tableHeader{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 321px) {
+    .App .tableHeader{
+        font-size: 12px;
+    }
+}
+
+.tableHeader{
+    font-weight: bold;
+    padding: 5px;
+    background: #ffd300;
+}

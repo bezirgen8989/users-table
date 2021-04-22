@@ -1,0 +1,26 @@
+@media (max-width: 376px) {
+    .App .table{
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 321px) {
+    .App .table{
+        min-width: 100%;
+    }
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table{
+    min-width: 500px;
+    margin: 0 auto;
+    border: 3px solid gold;
+}
+
+.selectedPage{
+  font-weight: bold;
+}

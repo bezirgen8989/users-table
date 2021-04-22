@@ -1,0 +1,30 @@
+@media (max-width: 376px) {
+    .App .trStyle{
+        font-size: 11px;
+    }
+
+}
+
+.trStyle{
+    font-family: "Times New Roman", sans-serif;
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+}
+
+.trStyle th{
+    border: 1px solid wheat;
+}
+
+tr th p{
+    text-decoration: none;
+    font-weight: initial;
+}
+
+tr th a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

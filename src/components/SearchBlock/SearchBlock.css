@@ -1,0 +1,36 @@
+@media (max-width: 321px) {
+    .App .SearchBlock span select{
+        font-size: 2.8vh;
+    }
+}
+
+.SearchBlock{
+    margin: 10px 0 10px 0;
+}
+
+.SearchBlock input{
+    padding: 0 0 2px 10px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+}
+
+.SearchBlock span select:hover{
+    background-color: #ffd300;
+    transition: .5s ease;
+}
+
+.SearchBlock span select{
+    border: none;
+    font-family: "Times New Roman", sans-serif;
+    padding: 0 0 0 5px ;
+    font-size: 1.8vh;
+    outline:none;
+    background: none;
+}
+
+.SearchBlock span select option{
+    border: none;
+    width: auto;
+}

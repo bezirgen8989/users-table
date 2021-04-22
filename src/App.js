@@ -14,7 +14,6 @@ function App() {
     const [selectState, setSelectState] = useState('name');
     const [isFetching, setIsFetching] = useState(false);
 
-
     let pages = []
     for (let i = 1; i <= 10; i++) {
         pages.push(i)

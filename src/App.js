@@ -26,17 +26,29 @@ function App() {
     useEffect(() => {
         if (paginatorStyle === false){
             setIsFetching(true)
-            axios.get(`https://jsonplaceholder.typicode.com/users`)
+            axios.get(`https://jsonplaceholder.typicode.com/users`, {
+                method:"get",
+                mode:"no-core",
+            })
                 .then(res => {
                     setIsFetching(false)
                     setTableArr(res.data)
+                    res.config.transformResponse[0]("Access-Control-Allow-Origin", "http://localhost:3000/");
+                    console.log(res)
                 })
         }else if (paginatorStyle === true){
             setIsFetching(true)
-            axios.get(`https://jsonplaceholder.typicode.com/users/${currentPage}`)
+            axios.get(`https://jsonplaceholder.typicode.com/users/${currentPage}`, {
+                method:"get",
+                mode:"no-core",
+                headers: {
+
+                }
+            })
                 .then(res => {
                     setIsFetching(false)
                     setTableArr([res.data])
+                    res.config.transformResponse[0]("Access-Control-Allow-Origin: *");
                 })
         }
     }, [currentPage, paginatorStyle]);

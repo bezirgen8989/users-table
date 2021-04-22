@@ -1,3 +1,6 @@
+.loadingStyle{
+    margin-top: 200px;
+}
 .lds-ring {
     width: 10%;
     z-index: 1000;
